@@ -8,7 +8,7 @@ const router:any[] = [
         method: 'POST',
         path: '/registration',
         options:{
-            tags: ['api','auth'],
+            tags: ['api','registration'],
             handler: RegistrationController.registration,
             description: 'User Registration',
             validate: {

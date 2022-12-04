@@ -14,7 +14,8 @@ model users {
   id Int @id @default(autoincrement())
   first_name String? @db.VarChar(255)
   last_name String? @db.VarChar(255)
-  email String?
+  email String
+  password String
   created_at DateTime  @default(dbgenerated("('now'::text)::timestamp(6) with time zone")) @db.Timestamp(6)
   updated_at DateTime  @default(dbgenerated("('now'::text)::timestamp(6) with time zone")) @db.Timestamp(6)
 }
